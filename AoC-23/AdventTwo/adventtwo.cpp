@@ -1,8 +1,7 @@
-#include "adventtwo.h"
-
 #include "../utils.h"
 #include <iostream>
 #include <string>
+#include "adventtwo.h"
 using namespace std;
 
 //#define DBG
@@ -10,7 +9,7 @@ using namespace std;
 void adventtwo::SolvePartOne()
 {
 	fstream buffer;
-	if (Utils::GatherInput(buffer, "AdventTwo/input.txt"))
+	if (Utils::GatherInput(buffer, m_inputFile))
 	{
 
 		int gameId = 1;
@@ -73,7 +72,7 @@ void adventtwo::SolvePartOne()
 					}
 
 					// detect if we're starting a new set 
-					if (newString.find(";"))
+					if (newString.find(";") == 0)
 					{
 						currentBlueTotal = 0;
 						currentRedTotal = 0;

@@ -2,6 +2,7 @@
 #include <sstream>
 #include <fstream>
 #include <iostream>
+#include "../utils.h"
 #include <vector>
 
 using namespace std;
@@ -10,9 +11,9 @@ using namespace std;
 
 void adventone::RunPart1()
 {
-	ifstream buffer;
+	fstream buffer;
 
-	if (GatherInput(buffer))
+	if (Utils::GatherInput(buffer, inputFile))
 	{
 		for (string temp; getline(buffer, temp);)
 		{
@@ -73,8 +74,3 @@ void adventone::RunPart1()
 
 }
 
-bool adventone::GatherInput(ifstream& buffer)
-{
-	buffer.open("AdventOne/input.txt");
-	return buffer.is_open();
-}

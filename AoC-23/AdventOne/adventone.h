@@ -12,10 +12,11 @@ public :
 
 
 private : 
-	bool GatherInput(std::ifstream& buffer);			// returns if successful
 
 	//std::stringstream buffer;
 	std::string inputString;
+	const std::string inputFile = "AdventOne/input.txt";
+	const std::string testInputFile = "AdventOne/textinput.txt";
 
 	std::vector<int> m_TotalNumbersFromStr;
 };
