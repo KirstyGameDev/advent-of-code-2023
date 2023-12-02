@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+/AoC-23/.vs/AoC-23
+/AoC-23/x64/Debug
+/AoC-23/AoC-23.vcxproj
+/AoC-23/AoC-23.vcxproj.filters
+/AoC-23/AoC-23.vcxproj.user
+/AoC-23/adventofcode23.code-workspace
