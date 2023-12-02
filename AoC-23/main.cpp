@@ -12,6 +12,10 @@ int main()
 
 	day.SolvePartOne();	
 
+	cout << "day Two Part Two" << endl;
+
+	day.SolvePartTwo();
+
 	return 0;
 
 }
