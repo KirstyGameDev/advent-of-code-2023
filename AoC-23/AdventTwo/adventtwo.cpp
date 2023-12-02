@@ -47,15 +47,15 @@ void adventtwo::SolvePartOne()
 				}
 				else
 				{
-					if (newString == "blue," || newString == "blue;")
+					if (newString.find ("blue") == 0)
 					{
 						currentBlueTotal += tempNumber;
 					}
-					else if (newString == "red," || newString == "red;")
+					else if (newString.find ("red") == 0 )
 					{
 						currentRedTotal += tempNumber;
 					}
-					else if (newString == "green," || newString == "green;")
+					else if (newString.find("green") == 0)
 					{
 						currentGreenTotal += tempNumber;
 					}
